@@ -1,0 +1,106 @@
+body {
+  background-color: black;
+  border: 1px solid red;
+  box-sizing: border-box;
+}
+
+.main-container {
+
+  margin: 100px auto;
+  height: 1900px;
+  width: 1150px;
+  background-color: #1f253d;
+  padding-top: 100px;
+}
+
+.navigation-bar {
+  font-size: 0;
+  border-radius: 5px 5px 5px 5px;
+  height: 85px;
+  width: 950px;
+  background-color: #394264;
+  padding: 0 0;
+  margin: 0px auto 0;
+}
+
+
+.navigation-bar-container {
+  zoom: 1;
+  *display: inline;
+  vertical-align: top;
+  width: 158px;
+  height: 82px;
+  background-color: #394264;
+  display: inline-block;
+  position: relative;
+
+
+}
+
+.navigation-bar-container:first-child {
+  border-radius: 5px; 0
+}
+
+.navigation-bar-container:first-child:hover {
+  background-color: #50597b;
+  border-bottom: 3px solid #11a8ab;
+  border-radius: 5px; 0
+  overflow: hidden;
+}
+
+.navigation-bar-container:last-child {
+    border-radius: 0px; 5px;
+  float: right;
+}
+
+
+.navigation-bar-container:last-child:hover {
+  background-color: #50597b;
+  border-bottom: 3px solid #11a8ab;
+  border-radius: 0px 5px 5px 0;
+  overflow: hidden;
+}
+
+.navigation-bar-container:hover {
+  background-color: #50597b;
+  border-bottom: 3px solid #11a8ab;
+  overflow: hidden;
+}
+
+.navigation-bar-spacing {
+  width: 25px;
+  height: 82px;
+  background-color: #394264;
+  display: inline-block;
+  border: 1px solid white;
+}
+
+.navigation-bar-container p {
+  padding-left: 24px;
+  font-size: 18px;
+  text-align: center;
+  line-height: 80px;
+  font-family: "Ubuntu Mono";
+  color: white;
+}
+
+.navigation-bar-container img {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.badge {
+  line-height: 22px;
+  border-radius: 100%;
+  width: 22px;
+  height: 22px;
+  background-color: #e64c65;
+  position: absolute;
+  top: 10px;
+  right: 0;
+
+}
+
+#avatar {
+  border-radius: 100px;
+}

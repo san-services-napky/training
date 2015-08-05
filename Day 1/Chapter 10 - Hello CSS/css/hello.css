@@ -1,0 +1,25 @@
+h1{font-family: Arial; color: blue;}
+body {
+  border-color: green;
+  background-color: pink;
+  font-size: 20px;
+}
+
+p {
+  text-align: left;
+  color: white;
+}
+
+ul {
+  width: 200px;
+  margin: 10px auto;
+  text-align: center;
+  border-style: solid;
+  border-width: medium;
+  border-color: brown;
+}
+
+li {
+  font-family: sans-serif;
+  margin: 10px auto;
+}
