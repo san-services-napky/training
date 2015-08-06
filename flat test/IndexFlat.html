@@ -2,63 +2,99 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="assets/styles/css/master.css" media="screen" title="no title" charset="utf-8">
-    <link rel="stylesheet" href="assets/styles/css/reset/reset.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="assets/styles/reset/reset.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="assets/styles/master.css" media="screen" title="no title" charset="utf-8">
     <link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono' rel='stylesheet' type='text/css'>
     <title>Dashboard</title>
   </head>
   <body>
 
     <div class="main-container">
-
-        <div class="navigation-bar">
-
+        <nav class="navigation-bar clearfix">
                 <div class="navigation-bar-container">
                   <p>
                     <img src="assets/img/ui_settings.png" alt="Setttings" />
                     Settings
                   </p>
                 </div>
-
                 <div class="navigation-bar-container">
                   <p>
                     <img src="assets/img/ui_account.png" alt="Account" />
                     Account
                   </p>
                 </div>
-
                 <div class="navigation-bar-container">
                   <p>
                     <img src="assets/img/ui_mail.png" alt="Mail" />
                     Messages
-                    <i class="badge">
+                    <i class="badge" id="test">
                         5
                     </i>
                   </p>
-
                 </div>
-
+                <script <source src="flat.js" ></script>
                 <div class="navigation-bar-container">
                   <p>
                     <img src="assets/img/ui_favorite.png" alt="Favorites" />
                     Favorites
                   </p>
                 </div>
-
                 <div class="navigation-bar-container">
                   <p>
                     Me
                     <img src="assets/img/ui_down_arrow.png" alt="Drop down arrow" />
-
                     <img  id="avatar" src="http://placehold.it/40x40" alt="Avatar" />
-
-
                   </p>
                 </div>
+        </nav>
 
+        <div class="column-box">
+
+            <div class="column">
+              <ul>
+                <li class="menu-box-header"> <a href="">Menu Box</a></li>
+                <li class="menu-box-item"> <a href=""><img src="assets/img/ui_mail.png" alt="Mail" /> Messages </a> </li>
+                <li class="menu-box-item"> <a href=""><img src="assets/img/ui_airplane.png" alt="Invite" /> Invites </a> </li>
+                <li class="menu-box-item"> <a href=""><img src="assets/img/ui_calendar.png" alt="Events" /> Events </a> </li>
+                <li class="menu-box-item"><a href=""><img src="assets/img/ui_settings.png" alt="Settings" /> Account Settings </a></li>
+                <li class="menu-box-item"><a href=""><img src="assets/img/ui_graph.png" alt="Statistics" /> Statistics </a></li>
+              </ul>
+            </div>
+
+            <div class="column">
+              <div class="avatar-widget-box">
+                <div class="add-sign">
+                      +
+                </div>
+                <img  id="avatar-widget" src="http://placehold.it/150x150" alt="Avatar" />
+                <h1>Anne Hathaway</h1>
+                <p class="avatar-widget-text" >
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                </p>
+              </div>
+
+
+                <ul class = "avatar-widget-bar">
+                  <li class="avatar-widget-bar-item"><a href="#"><img src="assets/img/ui_comment_bubble.png" alt="Comment" />23 </a></li>
+                  <li class="avatar-widget-bar-item"><a href="#"><img src="assets/img/ui_eye_icon.png" alt="Watch" />841</a></li>
+                  <li class="avatar-widget-bar-item"><a href="#"><img src="assets/img/ui_heart_icon.png" alt="Favorite" />93</a></li>
+                </ul>
+
+            </div>
+
+            <div class="column">
+              <div class="widget">
+                <h1 class="widget-h1">Join the newsletter</h1>
+                <input type="text" name="Email" value="yourname@yourmail.com">
+                <input type="submit" name="Submit mail" value="Subscribe">
+
+              </div>
+            </div>
 
         </div>
 
     </div>
+
+
   </body>
 </html>
