@@ -10,24 +10,31 @@
   <body>
 
     <div class="main-container">
-        <nav class="navigation-bar clearfix">
-                <div class="navigation-bar-container">
-                    <p><img src="assets/img/ui_settings.png" alt="Setttings" />Settings</p>
-                </div>
-                <div class="navigation-bar-container">
-                  <p><img src="assets/img/ui_account.png" alt="Account" /> Account </p>
-                </div>
-                <div class="navigation-bar-container">
-                  <p><img src="assets/img/ui_mail.png" alt="Mail" />Messages<i class="badge" id="test">5</i></p>
-                </div>
-                  <script <source src="flat.js" ></script>
-                <div class="navigation-bar-container">
-                  <p><img src="assets/img/ui_favorite.png" alt="Favorites" />Favorites </p>
-                </div>
-                <div class="navigation-bar-container">
-                  <p>Me<img src="assets/img/ui_down_arrow.png" alt="Drop down arrow" /> <img  id="avatar" src="http://placehold.it/40x40" alt="Avatar" /></p>
-                </div>
-        </nav>
+
+      <nav>
+        <ul class="navigation-bar clearfix">
+                <li class="navigation-bar-container">
+                    <a href="#"><p><img src="assets/img/ui_settings.png" alt="Setttings" />Settings</p></a>
+                </li>
+                <li class="navigation-bar-container">
+                    <a href="#"><p><img src="assets/img/ui_account.png" alt="Account" /> Account </p></a>
+                </li>
+                <li class="navigation-bar-container">
+                    <a href="#"><p><img src="assets/img/ui_mail.png" alt="Mail" />Messages<i class="badge" id="test">5</i></p></a>
+                </li>
+                    <script <source src="flat.js" ></script>
+                <li class="navigation-bar-container">
+                    <a href="#"> <p><img src="assets/img/ui_favorite.png" alt="Favorites" />Favorites </p> </a>
+                </li>
+                <li class="navigation-bar-container">
+                    <a href="#"><p>Me<img src="assets/img/ui_down_arrow.png" alt="Drop down arrow" /> <img  id="avatar" src="http://placehold.it/40x40" alt="Avatar" /></p></a>
+                    <ul>
+                          <li class="navigation-bar-sub-item"><a href="#"> <p> Subelement 1</p> </a></li>
+                          <li class="navigation-bar-sub-item"><a href="#"> <p> Subelement 2</p> </a></li>
+                    </ul>
+                </li>
+        </ul>
+      </nav>
 
         <div class="column-box">
             <div class="column">
@@ -58,12 +65,51 @@
             </div>
 
             <div class="column">
+
               <div class="widget">
                 <h1 class="widget-h1">Join the newsletter</h1>
-                <input type="text" name="Email" value="yourname@yourmail.com">
-                <input type="submit" name="Submit mail" value="Subscribe">
+                <input class="flat-input flat-input-mail" type="text" name="Email" value=" yourname@yourmail.com" maxlength="20">
+                <input class="subsribe-flat-mail" type="submit" name="Submit mail" value="Subscribe">
               </div>
+
+              <div class="widget">
+                <h1 class="widget-h1">Sign in to your account</h1>
+                <input class="flat-input flat-input-mail" type="text" name="Email" value="yourname@yourmail.com" maxlength="20">
+                <input class="flat-input flat-input-password" type="password" name="Email" value=" --------------------" maxlength="20">
+                <input type="submit" name="Submit mail" value="Sign in" id="submit-background-red">
+                <p class="avatar-widget-text">
+                  Forgot your password?
+                </p>
+                <a href="#" class="blue-box"><i class="white-circle">f</i > Sign in with facebook</a>
+              </div>
+
+              <div class="widget">
+                        <div class="file-transfer-progress-widget-container">
+                              <div class="file-transfer-progress-bar" id> <div id="download-bar-progress"></div></div>
+                              <p> <img src="assets/img/ui_download.png" alt="Settings" /> Downloading... <span class="file-transfer-progress-text">81</span> </p>
+                              <div class="file-transfer-progress-bar"> <div id="upload-bar-progress"></div></div>
+                              <p> <img src="assets/img/ui_upload.png" alt="Settings" /> Uploading... <span class="file-transfer-progress-text">43</span></p>
+                        </div>
+              </div>
+
+              <div class="widget clearfix" style="padding: 0px 0px">
+                    <div class="date-widget-header">
+                        <i class="white-circle arrow left"></i>
+                        <h1 class="widget-h1"> Wednesday </h1>
+                        <i class="white-circle arrow right"></i>
+                    </div>
+                    <div class="date-widget-container">
+                            <p>
+                              28
+                            </p>
+                            <input type="submit" name="submit date" value="ADD EVENT" id="date-subit">
+                    </div>
+              </div>
+
             </div>
+
+
+
         </div>
 
     </div>
